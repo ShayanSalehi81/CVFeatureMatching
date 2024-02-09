@@ -182,7 +182,7 @@ if len(uploaded_files) == 2:
             img = load_image_from_bytes(buffer.getvalue())
             img_rgb = to_rgb(img)
             st.image(img_rgb, use_column_width=True)
-            matches = inliers
+            # matches = kp1
         else:
             detector_name = detector
             detector = detectors[detector]()
